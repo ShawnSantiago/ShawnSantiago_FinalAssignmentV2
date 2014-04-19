@@ -1,0 +1,425 @@
+/*
+
+Author: Shawn Santiago
+Version: 1.0
+
+*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1,h2,h3,h3,p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ 
+/* container */
+.container {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+ 
+/* for clearing any floats */
+.clearfloat {
+    clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+ 
+/*--- header section ---*/
+header {
+	width: 100%;
+	height: 55px;
+	background-color: rgba(0,0,0,0.5); 
+
+}
+
+/*--- Logo ---*/
+
+#logo {
+
+	float: left;
+	height: 50px;
+	width: 20%;
+	background: url(../images/Floatit-Logo.png) center no-repeat;
+}
+
+ 
+/*--- horizontal menu ---*/
+#menu {
+	width: 80%;
+    float: left;
+}
+#menu li {
+    display: block;
+    float: left;
+    padding: 0 0 0 40px;
+}
+#menu li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    height: 50px;
+    
+}
+
+#menu li:first-child {
+	padding-left: 200px;
+}
+
+/*Home Section*/
+
+#home {
+	background-color: #3498db;
+	height: 920px;
+}
+
+#home h1 {
+	color: #ecf0f1;
+	padding-bottom: 10px;
+
+}
+#home h2 {
+	color: #ecf0f1;
+	padding-top: 5px;
+}
+
+#home h3 {
+	color: #bdc3c7;
+	padding-top: 5px;
+}
+
+
+.objectOne{
+	float: left;
+	position:relative;
+	left:150px;
+	top:50px;
+	height: 50px;
+	width:100px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-animation: animationFrames linear 2s;
+	-webkit-animation-iteration-count: infinte;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+	}
+
+	@-webkit-keyframes animationFrames {
+	0% {
+	left:50px;
+	top:50px;
+	}
+
+	100% {
+	left:200px;
+	top:50px;
+	}
+}
+
+.objectTwo{
+	float: left;
+	position:relative;
+	left:350px;
+	top:50px;
+	height: 50px;
+	width:490px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-animation: animationFramesTwo linear 2s;
+	-webkit-animation-iteration-count: infinte;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+	-webkit-animation-delay:1s;
+	}
+
+	@-webkit-keyframes animationFramesTwo {
+	0% {
+	left:350px;
+	top:50px;
+	}
+
+	100% {
+	left:210px;
+	top:50px;
+	}
+}
+
+.objectThree{
+	left:350px;
+	top:60px;
+	clear: both;
+	float: left;
+	position:relative;
+	height: 500px;
+	width: 600px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-animation: animationFramesThree linear 2s;
+	-webkit-animation-iteration-count: infinte;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+	-webkit-animation-delay:2s;
+	}
+
+	@-webkit-keyframes animationFramesThree {
+	0% {
+	left:350px;
+	top:60px;
+	}
+
+	100% {
+	left:200px;
+	top:60px;
+	}
+}
+
+.objectFour{
+	clear: both;
+	float: left;
+	position:relative;
+	left:150px;
+	top:70px;
+	height: 50px;
+	width: 600px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	-webkit-animation: animationFramesFour linear 1s;
+	-webkit-animation-iteration-count: infinte;
+	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+	-webkit-animation-delay:3s;
+	}
+
+	@-webkit-keyframes animationFramesFour {
+	0% {
+	left:150px;
+	top:70px;
+	}
+
+	100% {
+	left:200px;
+	top:70px;
+	}
+}
+
+/*Features Section*/
+
+#features {
+	height: 1220px;
+	background-color: #ecf0f1;
+ }
+
+#features h1 {
+	color: #34495e;
+	padding-top:80px;
+}
+
+#features h2 {
+	color: #7f8c8d;
+	padding-top:20px;
+}
+
+#features h3 {
+	color: #3498db;
+	padding:20px 20px;
+}
+
+#features img {
+	display: block;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+#features div > img {
+	height: 100px;
+	padding: 0;
+}
+
+.featuresBanner { 
+	position: relative; 
+	overflow: auto; 
+	
+	}
+    .featuresBanner li { 
+    	list-style: none; 
+    	height: 600px
+    }
+        .featuresBanner ul li { 
+        	float: left; 
+        }
+
+.featuresBanner > ul {
+  margin: 0;
+  padding: 0;
+  height: 600px;
+}
+
+.featuresBanner > ul li {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Demo Section */
+
+#demo {
+	height: 1020px;
+	background-color: #3498db;
+}
+
+
+#demo h1 {
+	color: #34495e;
+	padding-top:80px;
+	font-weight: bold;
+}
+
+#demo h2 {
+	color: #ecf0f1;
+	padding-top:20px;
+}
+
+#demo p {
+	color: #ecf0f1;
+	padding-top:10px;
+}
+
+.draggable { 
+	padding: 5px; 
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	height: 50px; 
+}
+
+#drag1 {
+	top: 100px;
+	left: 120px;
+	width: 150px; 
+	
+}
+
+#drag2 {
+	top: 110px;
+	left: 420px;
+	width: 450px; 
+}
+
+#drag3 {
+	top: 120px;
+	left: 120px;
+	width: 650px;
+	height: 300px; 
+}
+
+#drag4 {
+	top: 130px;
+	left: 450px;
+	width: 350px; 
+}
+
+#drag5 {
+	top: 140px;
+	left: 160px;
+	width: 300px; 
+}
+#drag6 {
+	top: 150px;
+	left: 90px;
+	width: 650px; 
+}
+
+/* Contact */
+
+#contact {
+	height: 600px;
+	background-color: #ecf0f1;
+ }
+
+form {
+	position: relative;
+	top: 100px;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	text-align:center;
+	width: 300px;
+	margin: 0 auto;
+	height: 400px;
+	clear: both;
+	display: block;
+}
+
+form h1 { 
+	position: relative;
+	padding-top:10px;
+	color: rgba(236, 240, 241,0.9);
+}
+
+form input {
+	position: relative;
+	padding-left: 10px;
+	height: 40px;
+	width: 250px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border:rgba(0,0,0,0.9);
+
+}
+form textarea {
+	padding-left: 10px;
+	height: 100px;
+	width: 250px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border:rgba(0,0,0,0.9);
+
+}
+
+input[type="submit"] {
+	position: relative;
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	background-color:#2980b9;
+	color:#ecf0f1;
+	
+}
+
+input[type="submit"]:hover {
+	background-color:#3498db;
+	}
+
+#contact a img {
+	position: relative;
+	width: 70px;
+	margin: 0 auto;
+	top: 120px;
+	display: block;
+}
+ 
+#contact a img:hover {
+	opacity: 0.5;
+}
+/* Footer */
+
+footer {
+	width: 100%;
+	height: 55px;
+	background-color: rgba(0,0,0,0.5); 
+}
+footer h2 {
+	width: 40% ;
+	padding-top: 10px;
+	float: left;
+	color: #ecf0f1;
+}
+
+footer img {
+
+	padding-left: 350px;
+}

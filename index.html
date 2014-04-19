@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="./scripts/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="./scripts/unslider.min.js"></script>
+</head>
+<body>
+
+	<section id="home">
+
+		<header>
+		<div class="container">
+			<div id="logo"></div>
+			<nav id="nav">
+				<ul id="menu">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#demo">Demo</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		</header>
+	<div class="container">	
+		<h1>Floating Made Easy</h1>
+		<h3>Destroy Floats and Conquer Web Development   </h3>
+		<div class="objectOne"><h2>Logo</h2></div>
+		<div class="objectTwo"><h2>Navigation</h2></div>
+		<div class="objectThree"><h2>Body</h2></div>
+		<div class="objectFour"><h2>Footer</h2></div>
+	</div>	
+	</section>
+	<section id="features">
+		<div class="container">
+			<h1>What is Floatit?</h1>
+			<h2>Imagine a world where Floats don't exist and making a website was a easy a tying your shoes.
+			Well for those of us who aren't clinically insane that world doesn't exist, but in place of a imagary world we have Floatti! The world's first Float warrior.</h2>
+			<h1>Features</h1>
+			<div class="featuresBanner">
+			    <ul>
+			        <li>
+			        	<img src="./images/flatdevices.png">
+						<h2>Works On All Devices</h2>
+						<h3>Floatti can refresh any HTML5 web browser. OS X, iOS 6+, Windows 7+ and Android 4.4+ are all supported. Every major browser, every major OS</h3></li>
+			        <li>
+			        	<img src="./images/easy.png">
+						<h2>Dead Simple</h2>
+						<h3>There are no browser plugins to install and no setup. Just click the "Floatit" button, then sit back and enjoy the magic. That's it.</h3>
+					</li>
+			        <li><img src="./images/money.png">
+						<h2>Simple Pricing</h2>
+						<h3>We only use Western Union, Personal Checks or Government Bribes. No other forms of curreny will be accepted.</h3>
+					</li>
+
+			    </ul>
+
+			</div>
+			<img src="./images/arrows.gif">
+		</div>
+
+	</section>
+	<section id="demo">
+		<div class="container">		
+		<h1>Cool Demo</h1>
+		<h2>Here is a Demo to showcase Floatti's powerful drag and place feature. Re-arrange the div as you see fit.</h2>
+		<div id="drag1" class="ui-widget-content draggable">
+  			<p>DRAG ME</p>
+		</div>
+		<div id="drag2" class="ui-widget-content draggable">
+  			<p>DRAG ME</p>
+		</div>
+		<div id="drag3" class="ui-widget-content draggable">
+  			<p>DRAG ME</p>
+		</div>
+		<div id="drag4" class="ui-widget-content draggable">
+  			<p>DRAG ME</p>
+		</div>
+		<div id="drag5" class="ui-widget-content draggable">
+  			<p>DRAG ME</p>
+		</div>
+		<div id="drag6" class="ui-widget-content draggable">
+  			<p>DRAG ME</p>
+		</div>
+		</div>
+
+	</section>
+	<section id="contact">
+		<div class="container">
+	
+	        <form>
+				<h1>Contact Us!</h1>
+	            <input type="text" placeholder="Name">
+	            <input type="text" placeholder="Email">
+	            <textarea type="textarea" placeholder="textarea"> 
+	            </textarea>
+	            <input type="submit" value="Submit">
+	        </form>
+	 
+	        <a href="#home"><img src="./images/top.png"></a>
+		</div>
+	</section>
+
+<footer>
+	<div class="container">
+		<h2>&copy; Shawn Santiago</h2>
+
+		<img src="./images/social.png">
+	</div>
+	
+</footer>
+	
+
+</body>
+
+<script type="text/javascript">
+	
+	$(function() {
+    $('.featuresBanner').unslider();
+});
+	$(function() {
+    $( ".draggable" ).draggable();
+  });
+
+
+</script>
+</html>
